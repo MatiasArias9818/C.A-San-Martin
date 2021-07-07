@@ -60,3 +60,18 @@ body {
   height: auto;
   border: 1px solid black;
 }
+.footer {
+  border: 1px solid darkred;
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: white;
+  width: auto;
+  text-align: center;
+  font: bold 15px bahnschrift;
+}
+.footer ul,
+p {
+  text-align: left;
+}
