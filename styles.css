@@ -24,13 +24,17 @@ li {
   font: lighter 15px bahnschrift;
 }
 .header {
-  border: 1px solid darkred;
-  padding: 20px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.banner {
+  display: flex;
+  width: 50%;
+  margin: 20px;
 }
 .menu {
   display: flex;
@@ -72,23 +76,52 @@ li {
   border: none;
   border-radius: 5px;
 }
+
+.flex-grp {
+  display: flex;
+}
+
 .article {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid white;
-  margin: 20px;
-  padding: 20px;
-  width: auto;
   background-color: white;
-  border: none;
-  border-radius: 5px;
-}
-.retroimg {
-  width: auto;
+  padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  width: auto;
+  margin: 10px;
 }
+.aside {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: auto;
+  margin: 10px;
+}
+.table {
+  background-color: rgb(187, 186, 186);
+  border: black solid 1px;
+  padding: 10px;
+}
+.table tr,
+th,
+td {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+.retroimg {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 95%;
+  margin-left: 10px;
+}
+
 .news:hover {
   background-color: rgb(241, 211, 127);
 }
@@ -111,9 +144,4 @@ li {
 .footer ul,
 h2 {
   text-align: left;
-}
-
-.banner {
-  width: fit-content;
-  resize: none;
 }
